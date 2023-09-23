@@ -1,21 +1,21 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     
 }
 
 body{
-    font-family: 'Aclonica', sans-serif;
-    font-family: 'Archivo', sans-serif;
-    font-family: 'Fascinate', cursive;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    background-color: #221a1a;
+    font-family: "roboto","arial","sans-serif";
 
-     color: #fff;
-    background-color: #000;
 
+}
+
+#first-box,#second-box,#sub{
+    position: absolute;
+    
 
 }
 
@@ -23,30 +23,44 @@ body{
     height: 30px;
     width: 30px;
     position: absolute;
+    display: flex;
+    flex-direction: row;
     
 }
 
+#first-box{
+    margin-top: 30px;
+    /* background-color: gray; */
+}
 .logo{
     margin-left: 35px;
     margin-top: 5px;
 }
 
-nav{
-    border: 2px solid rgb(51, 51, 51);
+
+
+.nav{
+    /* background-color: rgb(0, 0, 0); */
     height: 100%;
-    width: 18%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
     color: #fff;
-    background-color: rgb(51, 51, 51);
+    border: 2px solid black;
+
+    
 }
 
 #yt-logo{
     margin: 10px;
 }
 
+
+
 .first{
     
-    height: 40px;
-    width: 40px;   
+    height: 20px;
+    width: 20px;   
     margin: 15px;
     text-align: center;
     /* align-items: center; */
@@ -54,25 +68,29 @@ nav{
     
 } 
 
+#second-box{
+    margin-top: 300px;
+}
+
 .second{
 
-    height: 40px;
-    width: 40px;   
+    height: 20px;
+    width: 20px;   
     margin: 15px;
 }
 
 .channels{
     
-    height: 40px;
-    width: 40px;   
+    height: 20px;
+    width: 20px;   
     margin: 15px;
 }
 
 #search-box{
     position: absolute;
     display: flex;
-    justify-content: space-evenly;
-    /* border: 2px solid red; */
+    /* justify-content: space-around; */
+    /* border: 2px solid red */
     width: 40%;
     margin-left: 40%;
     bottom: 93%;
@@ -89,16 +107,22 @@ nav{
 }
 
 .bad{
-    text-align: center;
-    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    
+    /* border: 2px solid black; */
     padding-top: 5px;
+    
 
    
-    width: 150px;
-    height: 50px;
-    
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    max-width: fit-content;
+    min-width: 100px;
   
-    background-color: rgb(51, 48, 48);
+    background-color: white;
+    color: black;
     border-radius: 20px;
 }
 
@@ -106,43 +130,56 @@ nav{
     /* border: 2px solid black; */
     display: flex;
     position: absolute;
-    width: 90%;
-    margin-left: 250px;
-    bottom: 85%;
-    margin-top: 10px;
+    margin-left: 300px;
+   
+   
+    margin-top: 15px;
+    /* border: 2px solid black; */
     
 
 }
 
 #firstvid{
-    position: absolute;
     
-    text-align: center;
+    
+    display: flex;
     flex-direction: row;
     height: 100px;
     width: 150px;
+    margin-left: 300px;
+    margin-top: 40px;
 }
 
 .tick{
-    height: 20px;
-    
-    width: 20px;
+    height: 15px;
+    margin-top: 10px;    
+    width: 15px;
 }
 
 #secondvid{
     /* border: 2px solid white; */
+    display: flex;
+    flex-direction: row;
     width: 50%;
     height: 30%;
-    position: relative;
-    top: 80%;
+    margin-top: 170px;
+    
+    
     margin-left: 300px;
-    /* text-align: center; */
+    
+}
+
+.sv,.fv,.tv{
+    margin: 10px;
 }
 
 #thirdvid{
-    /* border: 2px solid white; */
-    position: relative;
     display: flex;
-
+    flex-direction: row;
+    margin-left: 300px;
 }
 
+#sub{
+    margin-top: 750px;
+
+}
