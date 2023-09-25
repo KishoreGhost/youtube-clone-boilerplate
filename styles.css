@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -15,6 +15,8 @@ body{
 
 #first-box,#second-box,#sub{
     position: absolute;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
     
 
 }
@@ -29,34 +31,17 @@ body{
 }
 
 #first-box{
-    margin-top: 30px;
-    /* background-color: gray; */
+   max-width: 200px;
 }
+
 .logo{
     margin-left: 35px;
     margin-top: 5px;
-}
-
-#sidebar{
-    height: 100%;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    border-bottom: 2px solid black;
-    background-color: #212121;
-    
-}
-
-
-
-    
+}    
 
 #yt-logo{
     margin: 10px;
 }
-
-
 
 .first{
     
@@ -64,20 +49,25 @@ body{
     width: 20px;   
     margin: 15px;
     text-align: center;
-    /* align-items: center; */
+    
     color: #fff;
+    text-align:inherit;
     
 } 
 
 #second-box{
-    margin-top: 300px;
+    margin-top: 220px;
+  
 }
 
 .second{
-
+    
+    margin: 15px;
     height: 20px;
     width: 20px;   
-    margin: 15px;
+    text-align: center;
+    
+    margin-left: 10px;
 }
 
 .channels{
@@ -88,7 +78,7 @@ body{
 }
 
 #search-box{
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     /* justify-content: space-around; */
     /* border: 2px solid red */
@@ -108,15 +98,12 @@ body{
 }
 
 .bad{
-    display: flex;
+    display: inline-flex;
+    
     justify-content: space-evenly;
     
     /* border: 2px solid black; */
     padding-top: 5px;
-    
-
-   
-    width: 200px;
     height: 35px;
     text-align: center;
     max-width: fit-content;
@@ -128,11 +115,10 @@ body{
 }
 
 #navigation{
-    /* border: 2px solid black; */
     display: flex;
     position: absolute;
     
-    margin-left: 300px;
+    margin-left: 200px;
    
    
     margin-top: 15px;
@@ -143,9 +129,9 @@ body{
 
 #firstvid{
     
-    
+    /* border: 2px solid black; */
     display: flex;
-    flex-direction: row;
+    /* position: relative; */
     height: 100px;
     width: 150px;
     margin-left: 300px;
@@ -173,21 +159,58 @@ body{
 
 .sv,.fv,.tv{
     margin: 10px;
+
 }
 
 #thirdvid{
+    
     display: flex;
     flex-direction: row;
     margin-left: 300px;
 }
 
 #sub{
-    margin-top: 750px;
+    margin-top: 550px;
+    display: inline-block;
 
 }
 
-@media all (max-width:425px){
+@media (max-width:425px){
+    #yt-logo,#first-box,#second-box,#sub{
+        display: none;
+        
+        
+    }
+
+    .bad{
+        display: none;
+    }
+
+    .top{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     
 
+    
+    #firstvid{
+        margin: 10%;
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        
+    }
 
+    #secondvid{
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+        margin-top: 700px;
+    }
+
+    #thirdvid{
+        display: none;
+    }
+   
 }
