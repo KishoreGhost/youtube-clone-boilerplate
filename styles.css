@@ -186,8 +186,8 @@ body{
 
 }
 
-@media (max-width:425px){
-    #firstvid,#secondvid,#thirdvid,#search-box{
-        display: flex;
-    }
+@media all (max-width:425px){
+    
+
+
 }
